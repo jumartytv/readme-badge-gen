@@ -1,0 +1,33 @@
+{
+  "name": "readme-badge-gen",
+  "version": "1.0.0",
+  "description": "A CLI that auto-generates shields.io badges for build status, coverage, license, and version straight into your README.",
+  "main": "src/badge-gen.js",
+  "type": "commonjs",
+  "bin": {
+    "badge-gen": "src/badge-gen.js"
+  },
+  "scripts": {
+    "start": "node src/badge-gen.js",
+    "test": "node --test test/ || echo 'no tests yet \u2014 add some in test/'",
+    "tracker": "node src/achievement-tracker.js",
+    "roadmap": "node src/achievement-tracker.js --roadmap",
+    "setup": "bash scripts/setup.sh"
+  },
+  "keywords": [
+    "readme",
+    "badges",
+    "shields.io",
+    "cli",
+    "docs"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OWNER/readme-badge-gen.git"
+  },
+  "author": ""
+}
